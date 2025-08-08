@@ -20,5 +20,6 @@ public enum PoliticalEntityType {
         CALIPHATE,    // An Islamic state under the leadership of an Islamic steward
         SULTANATE,    // A state or country governed by a sultan
         PRINCIPALITY, // A state ruled by a prince
-        DUCHY         // A territory ruled by a duke or duchess
+        DUCHY   ,      // A territory ruled by a duke or duchess
+        OTHER
 }
