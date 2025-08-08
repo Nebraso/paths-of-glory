@@ -1,12 +1,16 @@
 package com.paths_of_glory.app.domain.model;
+import org.springframework.lang.Nullable;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public class Battle {
     private Long id;
     private String name;
-    private Date startDate;
-    private Date endDate;
+    @Nullable
+    private LocalDate  startDate;
+    @Nullable
+    private LocalDate  endDate;
     private War war;
     private String location;
 }
