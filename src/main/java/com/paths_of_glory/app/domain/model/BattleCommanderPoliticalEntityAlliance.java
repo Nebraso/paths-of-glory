@@ -1,5 +1,6 @@
 package com.paths_of_glory.app.domain.model;
-
+import jakarta.persistence.*;
+import lombok.*;
 import org.springframework.lang.Nullable;
 import java.time.LocalDate;
 
