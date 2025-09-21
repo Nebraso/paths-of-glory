@@ -21,9 +21,10 @@ public class PoliticalEntityController {
         return service.create(request);
     }
 
-    @PutMapping
-    public PoliticalEntityResponse update(@RequestBody PoliticalEntityUpdateRequest request) {
-        return service.update(request);
+    @PutMapping("/{id}")
+    public PoliticalEntityResponse update(@PathVariable Long id, @RequestBody PoliticalEntityUpdateRequest request) {
+        PoliticalEntityUpdateRequest corrected = new PoliticalEntityUpdateRequest(id, request.getName(), request.getPoliticalEntityType(), request.getStartDate(), request.getEndDate());
+        return service.update(corrected);
     }
 
     @DeleteMapping("/{id}")
