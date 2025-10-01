@@ -21,7 +21,7 @@ public class PoliticalEntity {
 
     private LocalDate endDate;
 
-    // --- Constructors ---
+
     public PoliticalEntity() {}
 
     public PoliticalEntity(Long id, String name, PoliticalEntityType politicalEntityType, LocalDate startDate, LocalDate endDate) {
